@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2D20EAF1F649E8700FC5A2F /* TKToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D20EAD1F649E8700FC5A2F /* TKToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D20EBB1F649EAA00FC5A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20EBA1F649EAA00FC5A2F /* AppDelegate.swift */; };
+		F2D20EBD1F649EAA00FC5A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20EBC1F649EAA00FC5A2F /* ViewController.swift */; };
+		F2D20EC01F649EAA00FC5A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D20EBE1F649EAA00FC5A2F /* Main.storyboard */; };
+		F2D20EC21F649EAA00FC5A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D20EC11F649EAA00FC5A2F /* Assets.xcassets */; };
+		F2D20EC51F649EAA00FC5A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D20EC31F649EAA00FC5A2F /* LaunchScreen.storyboard */; };
+		F2D20ECF1F649F4B00FC5A2F /* TKToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D20EAA1F649E8700FC5A2F /* TKToolbox.framework */; };
+		F2D20ED01F649F4B00FC5A2F /* TKToolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D20EAA1F649E8700FC5A2F /* TKToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2D20ED51F649FA100FC5A2F /* TKToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2D20EAA1F649E8700FC5A2F /* TKToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2D20EDA1F64A0E400FC5A2F /* TKFadeOutAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20ED71F64A0BD00FC5A2F /* TKFadeOutAnimationStyle.swift */; };
+		F2D20EDB1F64A0E800FC5A2F /* TKPlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20ED81F64A0BD00FC5A2F /* TKPlaceholderStyle.swift */; };
+		F2D20EDC1F64A0EC00FC5A2F /* TKUnderlineBorderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20ED61F64A0BD00FC5A2F /* TKUnderlineBorderStyle.swift */; };
+		F2D20EDD1F64A0EF00FC5A2F /* TKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20ECC1F649EDD00FC5A2F /* TKTextField.swift */; };
+		F2D20EDE1F64A0F300FC5A2F /* TKTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20ECA1F649EDD00FC5A2F /* TKTextFieldStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2D20ED11F649F4B00FC5A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D20E9E1F649E6200FC5A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D20EA91F649E8700FC5A2F;
+			remoteInfo = TKToolbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2D20ED31F649F4B00FC5A2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2D20ED01F649F4B00FC5A2F /* TKToolbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D20ED41F649F9900FC5A2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2D20ED51F649FA100FC5A2F /* TKToolbox.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F2D20EAA1F649E8700FC5A2F /* TKToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TKToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D20EAD1F649E8700FC5A2F /* TKToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKToolbox.h; sourceTree = "<group>"; };
+		F2D20EAE1F649E8700FC5A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D20EB81F649EAA00FC5A2F /* TKToolboxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKToolboxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D20EBA1F649EAA00FC5A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2D20EBC1F649EAA00FC5A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2D20EBF1F649EAA00FC5A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2D20EC11F649EAA00FC5A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2D20EC41F649EAA00FC5A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2D20EC61F649EAA00FC5A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D20ECA1F649EDD00FC5A2F /* TKTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKTextFieldStyle.swift; sourceTree = "<group>"; };
+		F2D20ECC1F649EDD00FC5A2F /* TKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKTextField.swift; sourceTree = "<group>"; };
+		F2D20ED61F64A0BD00FC5A2F /* TKUnderlineBorderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKUnderlineBorderStyle.swift; sourceTree = "<group>"; };
+		F2D20ED71F64A0BD00FC5A2F /* TKFadeOutAnimationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKFadeOutAnimationStyle.swift; sourceTree = "<group>"; };
+		F2D20ED81F64A0BD00FC5A2F /* TKPlaceholderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKPlaceholderStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2D20EA61F649E8700FC5A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D20EB51F649EAA00FC5A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D20ECF1F649F4B00FC5A2F /* TKToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2D20E9D1F649E6200FC5A2F = {
+			isa = PBXGroup;
+			children = (
+				F2D20EA41F649E6E00FC5A2F /* Sources */,
+				F2D20EAC1F649E8700FC5A2F /* TKToolbox */,
+				F2D20EB91F649EAA00FC5A2F /* TKToolboxExample */,
+				F2D20EAB1F649E8700FC5A2F /* Products */,
+				F2D20ECD1F649F3C00FC5A2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2D20EA41F649E6E00FC5A2F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F2D20EB31F649E9100FC5A2F /* TKToolbox */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F2D20EAB1F649E8700FC5A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2D20EAA1F649E8700FC5A2F /* TKToolbox.framework */,
+				F2D20EB81F649EAA00FC5A2F /* TKToolboxExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2D20EAC1F649E8700FC5A2F /* TKToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				F2D20EAD1F649E8700FC5A2F /* TKToolbox.h */,
+				F2D20EAE1F649E8700FC5A2F /* Info.plist */,
+			);
+			path = TKToolbox;
+			sourceTree = "<group>";
+		};
+		F2D20EB31F649E9100FC5A2F /* TKToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				F2D20ED91F64A0D000FC5A2F /* Styles */,
+				F2D20ECC1F649EDD00FC5A2F /* TKTextField.swift */,
+				F2D20ECA1F649EDD00FC5A2F /* TKTextFieldStyle.swift */,
+			);
+			path = TKToolbox;
+			sourceTree = "<group>";
+		};
+		F2D20EB91F649EAA00FC5A2F /* TKToolboxExample */ = {
+			isa = PBXGroup;
+			children = (
+				F2D20EBA1F649EAA00FC5A2F /* AppDelegate.swift */,
+				F2D20EBC1F649EAA00FC5A2F /* ViewController.swift */,
+				F2D20EBE1F649EAA00FC5A2F /* Main.storyboard */,
+				F2D20EC11F649EAA00FC5A2F /* Assets.xcassets */,
+				F2D20EC31F649EAA00FC5A2F /* LaunchScreen.storyboard */,
+				F2D20EC61F649EAA00FC5A2F /* Info.plist */,
+			);
+			path = TKToolboxExample;
+			sourceTree = "<group>";
+		};
+		F2D20ECD1F649F3C00FC5A2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2D20ED91F64A0D000FC5A2F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F2D20ED71F64A0BD00FC5A2F /* TKFadeOutAnimationStyle.swift */,
+				F2D20ED81F64A0BD00FC5A2F /* TKPlaceholderStyle.swift */,
+				F2D20ED61F64A0BD00FC5A2F /* TKUnderlineBorderStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F2D20EA71F649E8700FC5A2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D20EAF1F649E8700FC5A2F /* TKToolbox.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F2D20EA91F649E8700FC5A2F /* TKToolbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D20EB01F649E8700FC5A2F /* Build configuration list for PBXNativeTarget "TKToolbox" */;
+			buildPhases = (
+				F2D20EA51F649E8700FC5A2F /* Sources */,
+				F2D20EA61F649E8700FC5A2F /* Frameworks */,
+				F2D20EA71F649E8700FC5A2F /* Headers */,
+				F2D20EA81F649E8700FC5A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKToolbox;
+			productName = TKToolbox;
+			productReference = F2D20EAA1F649E8700FC5A2F /* TKToolbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2D20EB71F649EAA00FC5A2F /* TKToolboxExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D20EC71F649EAA00FC5A2F /* Build configuration list for PBXNativeTarget "TKToolboxExample" */;
+			buildPhases = (
+				F2D20EB41F649EAA00FC5A2F /* Sources */,
+				F2D20EB51F649EAA00FC5A2F /* Frameworks */,
+				F2D20EB61F649EAA00FC5A2F /* Resources */,
+				F2D20ED31F649F4B00FC5A2F /* Embed Frameworks */,
+				F2D20ED41F649F9900FC5A2F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2D20ED21F649F4B00FC5A2F /* PBXTargetDependency */,
+			);
+			name = TKToolboxExample;
+			productName = TKToolboxExample;
+			productReference = F2D20EB81F649EAA00FC5A2F /* TKToolboxExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2D20E9E1F649E6200FC5A2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					F2D20EA91F649E8700FC5A2F = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					F2D20EB71F649EAA00FC5A2F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F2D20EA11F649E6200FC5A2F /* Build configuration list for PBXProject "TKToolbox" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2D20E9D1F649E6200FC5A2F;
+			productRefGroup = F2D20EAB1F649E8700FC5A2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2D20EA91F649E8700FC5A2F /* TKToolbox */,
+				F2D20EB71F649EAA00FC5A2F /* TKToolboxExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2D20EA81F649E8700FC5A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D20EB61F649EAA00FC5A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D20EC51F649EAA00FC5A2F /* LaunchScreen.storyboard in Resources */,
+				F2D20EC21F649EAA00FC5A2F /* Assets.xcassets in Resources */,
+				F2D20EC01F649EAA00FC5A2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2D20EA51F649E8700FC5A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D20EDE1F64A0F300FC5A2F /* TKTextFieldStyle.swift in Sources */,
+				F2D20EDD1F64A0EF00FC5A2F /* TKTextField.swift in Sources */,
+				F2D20EDB1F64A0E800FC5A2F /* TKPlaceholderStyle.swift in Sources */,
+				F2D20EDC1F64A0EC00FC5A2F /* TKUnderlineBorderStyle.swift in Sources */,
+				F2D20EDA1F64A0E400FC5A2F /* TKFadeOutAnimationStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D20EB41F649EAA00FC5A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D20EBD1F649EAA00FC5A2F /* ViewController.swift in Sources */,
+				F2D20EBB1F649EAA00FC5A2F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2D20ED21F649F4B00FC5A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D20EA91F649E8700FC5A2F /* TKToolbox */;
+			targetProxy = F2D20ED11F649F4B00FC5A2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2D20EBE1F649EAA00FC5A2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D20EBF1F649EAA00FC5A2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2D20EC31F649EAA00FC5A2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D20EC41F649EAA00FC5A2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2D20EA21F649E6200FC5A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F2D20EA31F649E6200FC5A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F2D20EB11F649E8700FC5A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YZB6HYGFR3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TKToolbox/Info.plist;
+				INSTALL_PATH = "@executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tklusemann.TKToolbox;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2D20EB21F649E8700FC5A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YZB6HYGFR3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TKToolbox/Info.plist;
+				INSTALL_PATH = "@executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tklusemann.TKToolbox;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2D20EC81F649EAA00FC5A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YZB6HYGFR3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TKToolboxExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tklusemann.TKToolboxExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2D20EC91F649EAA00FC5A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YZB6HYGFR3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TKToolboxExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tklusemann.TKToolboxExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2D20EA11F649E6200FC5A2F /* Build configuration list for PBXProject "TKToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D20EA21F649E6200FC5A2F /* Debug */,
+				F2D20EA31F649E6200FC5A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D20EB01F649E8700FC5A2F /* Build configuration list for PBXNativeTarget "TKToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D20EB11F649E8700FC5A2F /* Debug */,
+				F2D20EB21F649E8700FC5A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D20EC71F649EAA00FC5A2F /* Build configuration list for PBXNativeTarget "TKToolboxExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D20EC81F649EAA00FC5A2F /* Debug */,
+				F2D20EC91F649EAA00FC5A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2D20E9E1F649E6200FC5A2F /* Project object */;
+}
