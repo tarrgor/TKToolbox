@@ -24,7 +24,13 @@ class ViewController: UIViewController {
     placeholderStyle.alignment = .center
     placeholderStyle.animationStyle = TKFadeOutAnimationStyle()
     textField.tkPlaceholderStyle = placeholderStyle
+    
+    print(textField.frame, textField.textRect(forBounds: textField.bounds))
   }
 
+  @IBAction func changeFrame(sender: UIButton) {
+    textField.frame = CGRect(x: 20, y: 20, width: 150, height: 70)
+    print(textField.frame, textField.textRect(forBounds: textField.bounds))
+  }
 }
 

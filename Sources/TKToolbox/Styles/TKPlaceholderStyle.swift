@@ -40,9 +40,10 @@ public class TKPlaceholderStyle: TKTextFieldPlaceholderStyle {
     updatePlaceholder(rect)
   }
   
-  private func updatePlaceholder(_ rect: CGRect) {
-    _textField?.placeholderLabel.frame = rect.insetBy(dx: insets.x, dy: insets.y)
-    _textField?.placeholderLabel.text = _textField?.placeholder
+  public func updatePlaceholder(_ rect: CGRect) {
+    guard let textField = _textField else { return }
+    _textField?.placeholderLabel.frame = textField.bounds.insetBy(dx: insets.x, dy: insets.y)
+    _textField?.placeholderLabel.text = textField.placeholder
   }
 }
 

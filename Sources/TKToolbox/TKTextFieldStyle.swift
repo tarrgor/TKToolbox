@@ -17,10 +17,12 @@ public protocol TKAnimationStyle {
 
 public protocol TKTextFieldBorderStyle: TKTextFieldStyle {
   func drawBorder(_ rect: CGRect)
+  func updateBorder(_ rect: CGRect)
 }
 
 public protocol TKTextFieldPlaceholderStyle: TKTextFieldStyle {
   func drawPlaceholder(_ rect: CGRect)
+  func updatePlaceholder(_ rect: CGRect)
 }
 
 public enum TKTextFieldAnimationState {
