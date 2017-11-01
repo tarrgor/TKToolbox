@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F216019D1FA9D824009F1D32 /* TKSwipeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216019B1FA9D824009F1D32 /* TKSwipeContainerView.swift */; };
+		F216019E1FA9D824009F1D32 /* TKSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216019C1FA9D824009F1D32 /* TKSwipeView.swift */; };
+		F21601A01FA9DD5D009F1D32 /* TKSwipeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216019F1FA9DD5D009F1D32 /* TKSwipeViewViewController.swift */; };
 		F2D20EAF1F649E8700FC5A2F /* TKToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D20EAD1F649E8700FC5A2F /* TKToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2D20EBB1F649EAA00FC5A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20EBA1F649EAA00FC5A2F /* AppDelegate.swift */; };
-		F2D20EBD1F649EAA00FC5A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20EBC1F649EAA00FC5A2F /* ViewController.swift */; };
+		F2D20EBD1F649EAA00FC5A2F /* TKTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D20EBC1F649EAA00FC5A2F /* TKTextFieldViewController.swift */; };
 		F2D20EC01F649EAA00FC5A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D20EBE1F649EAA00FC5A2F /* Main.storyboard */; };
 		F2D20EC21F649EAA00FC5A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D20EC11F649EAA00FC5A2F /* Assets.xcassets */; };
 		F2D20EC51F649EAA00FC5A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D20EC31F649EAA00FC5A2F /* LaunchScreen.storyboard */; };
@@ -58,12 +61,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F216019B1FA9D824009F1D32 /* TKSwipeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKSwipeContainerView.swift; sourceTree = "<group>"; };
+		F216019C1FA9D824009F1D32 /* TKSwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKSwipeView.swift; sourceTree = "<group>"; };
+		F216019F1FA9DD5D009F1D32 /* TKSwipeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKSwipeViewViewController.swift; sourceTree = "<group>"; };
 		F2D20EAA1F649E8700FC5A2F /* TKToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TKToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D20EAD1F649E8700FC5A2F /* TKToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKToolbox.h; sourceTree = "<group>"; };
 		F2D20EAE1F649E8700FC5A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2D20EB81F649EAA00FC5A2F /* TKToolboxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKToolboxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D20EBA1F649EAA00FC5A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2D20EBC1F649EAA00FC5A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2D20EBC1F649EAA00FC5A2F /* TKTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKTextFieldViewController.swift; sourceTree = "<group>"; };
 		F2D20EBF1F649EAA00FC5A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2D20EC11F649EAA00FC5A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2D20EC41F649EAA00FC5A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F21601991FA9D7B1009F1D32 /* TKTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F2D20ED91F64A0D000FC5A2F /* Styles */,
+				F2D20ECC1F649EDD00FC5A2F /* TKTextField.swift */,
+				F2D20ECA1F649EDD00FC5A2F /* TKTextFieldStyle.swift */,
+			);
+			path = TKTextField;
+			sourceTree = "<group>";
+		};
+		F216019A1FA9D7FA009F1D32 /* TKSwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				F216019B1FA9D824009F1D32 /* TKSwipeContainerView.swift */,
+				F216019C1FA9D824009F1D32 /* TKSwipeView.swift */,
+			);
+			path = TKSwipeView;
+			sourceTree = "<group>";
+		};
 		F2D20E9D1F649E6200FC5A2F = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +159,8 @@
 		F2D20EB31F649E9100FC5A2F /* TKToolbox */ = {
 			isa = PBXGroup;
 			children = (
-				F2D20ED91F64A0D000FC5A2F /* Styles */,
-				F2D20ECC1F649EDD00FC5A2F /* TKTextField.swift */,
-				F2D20ECA1F649EDD00FC5A2F /* TKTextFieldStyle.swift */,
+				F216019A1FA9D7FA009F1D32 /* TKSwipeView */,
+				F21601991FA9D7B1009F1D32 /* TKTextField */,
 			);
 			path = TKToolbox;
 			sourceTree = "<group>";
@@ -145,7 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				F2D20EBA1F649EAA00FC5A2F /* AppDelegate.swift */,
-				F2D20EBC1F649EAA00FC5A2F /* ViewController.swift */,
+				F2D20EBC1F649EAA00FC5A2F /* TKTextFieldViewController.swift */,
+				F216019F1FA9DD5D009F1D32 /* TKSwipeViewViewController.swift */,
 				F2D20EBE1F649EAA00FC5A2F /* Main.storyboard */,
 				F2D20EC11F649EAA00FC5A2F /* Assets.xcassets */,
 				F2D20EC31F649EAA00FC5A2F /* LaunchScreen.storyboard */,
@@ -287,9 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F216019D1FA9D824009F1D32 /* TKSwipeContainerView.swift in Sources */,
 				F2D20EDE1F64A0F300FC5A2F /* TKTextFieldStyle.swift in Sources */,
 				F2D20EDD1F64A0EF00FC5A2F /* TKTextField.swift in Sources */,
 				F2D20EDB1F64A0E800FC5A2F /* TKPlaceholderStyle.swift in Sources */,
+				F216019E1FA9D824009F1D32 /* TKSwipeView.swift in Sources */,
 				F2D20EDC1F64A0EC00FC5A2F /* TKUnderlineBorderStyle.swift in Sources */,
 				F2D20EDA1F64A0E400FC5A2F /* TKFadeOutAnimationStyle.swift in Sources */,
 			);
@@ -299,8 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D20EBD1F649EAA00FC5A2F /* ViewController.swift in Sources */,
+				F2D20EBD1F649EAA00FC5A2F /* TKTextFieldViewController.swift in Sources */,
 				F2D20EBB1F649EAA00FC5A2F /* AppDelegate.swift in Sources */,
+				F21601A01FA9DD5D009F1D32 /* TKSwipeViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

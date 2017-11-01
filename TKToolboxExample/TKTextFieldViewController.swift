@@ -8,7 +8,7 @@
 import UIKit
 import TKToolbox
 
-class ViewController: UIViewController {
+class TKTextFieldViewController: UIViewController {
 
   @IBOutlet weak var textField: TKTextField!
   

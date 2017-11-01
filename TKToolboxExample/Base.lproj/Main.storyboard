@@ -1,49 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Avk-id-jOL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="TUe-bl-BSY">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TKToolboxExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Avk-id-jOL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CA8-rE-4iC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jLS-Mk-FCE" kind="relationship" relationship="rootViewController" id="Yrm-x2-7qJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5H6-Du-BTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="133"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="wPk-hs-0ht">
+            <objects>
+                <viewController title="Menu" id="jLS-Mk-FCE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2bS-yo-KGE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-Gt-W7i" customClass="TKTextField" customModule="TKToolbox">
-                                <rect key="frame" x="16" y="80" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlg-R0-NVs">
+                                <rect key="frame" x="147" y="80" width="81" height="30"/>
+                                <state key="normal" title="TKTextField"/>
+                                <connections>
+                                    <segue destination="3HU-k2-k43" kind="show" id="dZd-QN-TgY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzU-az-VZ0">
+                                <rect key="frame" x="141" y="126" width="93" height="30"/>
+                                <state key="normal" title="TKSwipeView"/>
+                                <connections>
+                                    <segue destination="W0W-af-7nN" kind="show" id="buu-cj-Hop"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dlg-R0-NVs" firstAttribute="centerX" secondItem="2bS-yo-KGE" secondAttribute="centerX" id="Hpa-V3-pTI"/>
+                            <constraint firstItem="dlg-R0-NVs" firstAttribute="top" secondItem="Q5k-fb-ifW" secondAttribute="top" constant="16" id="PoK-ug-bmT"/>
+                            <constraint firstItem="GzU-az-VZ0" firstAttribute="centerX" secondItem="2bS-yo-KGE" secondAttribute="centerX" id="bJK-3S-6IB"/>
+                            <constraint firstItem="GzU-az-VZ0" firstAttribute="top" secondItem="dlg-R0-NVs" secondAttribute="bottom" constant="16" id="uGl-tI-f7B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q5k-fb-ifW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2h7-0n-gan"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMq-pi-bfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="133"/>
+        </scene>
+        <!--Swipe View View Controller-->
+        <scene sceneID="uaT-JK-yQf">
+            <objects>
+                <viewController id="W0W-af-7nN" customClass="TKSwipeViewViewController" customModule="TKToolboxExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2N0-9d-LOv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jwg-GP-gA7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBz-Zo-S7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="133"/>
+        </scene>
+        <!--TKTextField-->
+        <scene sceneID="BXb-td-nkE">
+            <objects>
+                <viewController title="TKTextField" id="3HU-k2-k43" customClass="TKTextFieldViewController" customModule="TKToolboxExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iKG-cd-XAN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0S2-F4-lBF" customClass="TKTextField" customModule="TKToolbox">
+                                <rect key="frame" x="87.5" y="80" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Ze-XR-bbp"/>
+                                    <constraint firstAttribute="width" constant="200" id="6Lu-Qq-S1X"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1O-gO-Em8">
-                                <rect key="frame" x="16" y="138" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change frame"/>
-                                <connections>
-                                    <action selector="changeFrameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cd4-8F-PNP"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0S2-F4-lBF" firstAttribute="top" secondItem="M3k-Bh-nGR" secondAttribute="top" constant="16" id="UM5-oK-ucg"/>
+                            <constraint firstItem="0S2-F4-lBF" firstAttribute="centerX" secondItem="iKG-cd-XAN" secondAttribute="centerX" id="VSk-E2-dej"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M3k-Bh-nGR"/>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="wQH-Gt-W7i" id="PMa-AS-rUY"/>
+                        <outlet property="textField" destination="0S2-F4-lBF" id="EWv-NQ-GVd"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZp-PS-q21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+            <point key="canvasLocation" x="671" y="-591"/>
         </scene>
     </scenes>
 </document>
