@@ -52,8 +52,15 @@ public final class TKSwipeView: UIView {
     return currentHotRegion
   }
   
+  /// Returns the content view which should be used to place your own subviews in it
+  public var contentView: UIView {
+    return _contentView
+  }
+  
   // Internal properties
   //
+  fileprivate var _contentView: UIView!
+
   var panGestureRecognizer: UIPanGestureRecognizer!
   var isActive: Bool = true {
     didSet {
@@ -92,11 +99,32 @@ public final class TKSwipeView: UIView {
 
 extension TKSwipeView {
   
+  public override func updateConstraints() {
+    setupConstraints()
+    super.updateConstraints()
+  }
+  
+}
+
+extension TKSwipeView {
+  
   // Private methods
   //
   fileprivate func setup() {
+    _contentView = UIView(frame: self.bounds)
+    _contentView.backgroundColor = .green
+    addSubview(_contentView)
+    
     panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panned(recognizer:)))
     self.addGestureRecognizer(panGestureRecognizer)
+  }
+  
+  fileprivate func setupConstraints() {
+    _contentView.translatesAutoresizingMaskIntoConstraints = false
+    _contentView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+    _contentView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+    _contentView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+    _contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
   }
 
   fileprivate func setShadowsEnabled(_ enabled: Bool, _ offset: CGSize) {

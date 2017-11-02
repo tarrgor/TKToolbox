@@ -20,11 +20,11 @@ class TKSwipeViewViewController: UIViewController {
     container.delegate = self
     
     let sv1 = TKSwipeView.init()
-    sv1.backgroundColor = .gray
+    sv1.contentView.backgroundColor = .gray
     container.push(sv1)
     
     let sv2 = TKSwipeView.init()
-    sv2.backgroundColor = .orange
+    sv2.contentView.backgroundColor = .orange
     sv2.isCastingShadows = true
     container.push(sv2)
     
