@@ -112,7 +112,6 @@ extension TKSwipeView {
   //
   fileprivate func setup() {
     _contentView = UIView(frame: self.bounds)
-    _contentView.backgroundColor = .green
     addSubview(_contentView)
     
     panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panned(recognizer:)))
