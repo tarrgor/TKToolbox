@@ -33,6 +33,19 @@ public final class TKSwipeContainerView: UIView {
 }
 
 public extension TKSwipeContainerView {
+
+  // Public properties
+  //
+  
+  /// Returns true if there is currently no TKSwipeView on the stack
+  ///
+  var isEmpty: Bool {
+    return stack.count == 0
+  }
+  
+}
+
+public extension TKSwipeContainerView {
   
   // Public methods
   //
@@ -86,8 +99,7 @@ public extension TKSwipeContainerView {
       if animation != nil {
         animation?(removedSwipeView)
       } else {
-        removedSwipeView.frame.origin.x -= 200
-        removedSwipeView.alpha = 0
+        self.performDefaultAnimation(using: removedSwipeView)
       }
     }, completion: { _ in
       removedSwipeView.removeFromSuperview()
@@ -104,6 +116,21 @@ fileprivate extension TKSwipeContainerView {
     swipeView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
     swipeView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     swipeView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+  }
+  
+  func performDefaultAnimation(using view: TKSwipeView) {
+    var direction: CGFloat = 0
+    switch view.hotRegion {
+    case .some(.left):
+      direction = -1
+    case .some(.right):
+      direction = 1
+    default:
+      direction = 0
+    }
+    
+    view.frame.origin.x += (200 * direction)
+    view.alpha = 0
   }
   
 }

@@ -23,6 +23,9 @@ public final class TKSwipeView: UIView {
     case right
   }
 
+  // Public properties
+  //
+  
   /// The delegate to call when defined events occure like the view is reaching
   /// the 'hot region' in which an action is about to be executed when the user
   /// releases the view within that region.
@@ -41,6 +44,12 @@ public final class TKSwipeView: UIView {
     didSet {
       setShadowsEnabled(isCastingShadows, shadowOffset)
     }
+  }
+  
+  /// Returns the current hot region of the TKSwipeView. Returns nil if it is not in
+  /// a hot region
+  public var hotRegion: HotRegion? {
+    return currentHotRegion
   }
   
   // Internal properties
@@ -78,6 +87,10 @@ public final class TKSwipeView: UIView {
     super.init(coder: aDecoder)
     setup()
   }
+  
+}
+
+extension TKSwipeView {
   
   // Private methods
   //
@@ -144,5 +157,6 @@ public final class TKSwipeView: UIView {
     layer.setAffineTransform(rotate)
     layer.position.x = self.bounds.midX + (angle * self.bounds.midX) * 2.5
   }
+  
 }
 
