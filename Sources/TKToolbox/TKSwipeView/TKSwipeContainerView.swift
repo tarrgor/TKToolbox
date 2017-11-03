@@ -43,6 +43,12 @@ public extension TKSwipeContainerView {
     return stack.count == 0
   }
   
+  /// Returns the currently visible TKSwipeView instance, which means the top view on the stack
+  ///
+  var visibleView: TKSwipeView? {
+    return stack.last
+  }
+  
 }
 
 public extension TKSwipeContainerView {
