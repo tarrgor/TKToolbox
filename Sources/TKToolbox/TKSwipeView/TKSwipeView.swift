@@ -18,6 +18,10 @@ public protocol TKSwipeViewDelegate: class {
 
 public final class TKSwipeView: UIView {
 
+  /// The swipe region which can trigger an action when swiping the view into it
+  ///
+  /// - left: Triggered when swiping to the left side
+  /// - right: Triggered when swiping to the right side
   public enum HotRegion {
     case left
     case right
@@ -56,17 +60,25 @@ public final class TKSwipeView: UIView {
   public var contentView: UIView {
     return _contentView
   }
+
+  /// Can the user swipe this TKSwipeView instance?
+  public var isSwipeable: Bool = true
+  
+  /// An arbitrary user information that can be assigned to this TKSwipView instance e.g. to
+  /// identify the content represented by it later.
+  /// Note: Class types will be referenced strongly
+  public var userInfo: Any?
   
   // Internal properties
   //
   fileprivate var _contentView: UIView!
-
-  var panGestureRecognizer: UIPanGestureRecognizer!
   var isActive: Bool = true {
     didSet {
       panGestureRecognizer.isEnabled = isActive
     }
   }
+
+  var panGestureRecognizer: UIPanGestureRecognizer!
   
   var startLocation: CGPoint = CGPoint.zero
 
@@ -80,11 +92,18 @@ public final class TKSwipeView: UIView {
     }
   }
   
+  /// Initializes and returns a new TKSwipeView instance with the specified active state
+  ///
+  /// - Parameter active: Is swiping active on this view?
   public convenience init(active: Bool = true) {
     self.init(frame: CGRect.zero)
-    self.isActive = active
+    defer { self.isActive = active }
   }
   
+  /// Initializes and returns a new TKSwipeView instance with the specified frame. It will be in active
+  /// state.
+  ///
+  /// - Parameter frame: A CGRect to define position and size of the view
   public override init(frame: CGRect) {
     super.init(frame: frame)
     setup()
@@ -110,6 +129,7 @@ extension TKSwipeView {
   
   // Private methods
   //
+  
   fileprivate func setup() {
     _contentView = UIView(frame: self.bounds)
     _contentView.backgroundColor = .white
@@ -136,6 +156,7 @@ extension TKSwipeView {
   }
   
   @objc fileprivate func panned(recognizer: UIGestureRecognizer) {
+    guard isSwipeable else { return }
     guard let superview = self.superview else { return }
     
     let location = recognizer.location(in: superview)

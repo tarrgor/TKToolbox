@@ -21,6 +21,7 @@ class TKSwipeViewViewController: UIViewController {
     
     let sv1 = TKSwipeView.init()
     sv1.contentView.backgroundColor = .gray
+    sv1.isSwipeable = false
     container.push(sv1)
     
     let sv2 = TKSwipeView.init()
